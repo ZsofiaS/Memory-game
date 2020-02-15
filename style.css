@@ -1,0 +1,96 @@
+body {
+  color: #1a1a1a;
+}
+h1 {
+  position: absolute;
+  font-size: 6rem;
+  z-index: 10;
+  margin: 0 auto;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Zhi Mang Xing', cursive;
+}
+button {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 1rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Zhi Mang Xing', cursive;
+  border: none;
+  background-color: rgba(255, 127, 21, 1);
+  color: #A50017;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+button:active {
+  box-shadow: none;
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+}
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.title {
+  top: 35%;
+  width: 30rem;
+  text-align: center;
+}
+.container {
+  position: relative;
+  max-width: 45rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  margin: 0.8rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  position: relative;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 2rem;
+  text-align: center;
+  visibility: visible;
+}
+.card-inner {
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.card-inner-active {
+  transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-front {
+  background-image: url("https://dl.dropboxusercontent.com/s/vyhxbuizgfd1q91/knot.svg?dl=0");
+  background-color: rgba(255, 127, 21, 1);
+  background-position: center;
+  background-size: 8rem 9rem;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
